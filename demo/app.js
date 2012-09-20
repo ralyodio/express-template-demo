@@ -3,8 +3,9 @@
  * Module dependencies.
  */
 
-//change your template engine here
-var template_engine = 'dust';
+//change your template engine and hostname here ('ejs' or 'dust')
+var template_engine = 'dust'
+	, domain = 'spring';
 
 var express = require('express')
   , routes = require('./routes')
@@ -23,7 +24,7 @@ if ( template_engine == 'dust' ) {
 
 app.configure(function(){
   app.set('template_engine', template_engine);
-  app.set('domain', 'spring');
+  app.set('domain', domain);
   app.set('port', process.env.PORT || 3000);
   app.set('views', __dirname + '/views');
   app.set('view engine', template_engine);
