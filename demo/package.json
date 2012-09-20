@@ -1,0 +1,16 @@
+{
+  "name": "express-template-demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.x",
+		"dustjs-linkedin": "*",
+		"dustjs-helpers": "*",
+		"consolidate": "*",
+    "ejs": "*",
+    "less-middleware": "*"
+  }
+}
