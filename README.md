@@ -3,9 +3,13 @@ Express Template Demo
 
 Demo of ejs and dustjs-linked in template views for Express 3.x.
 
-More info:
+More info
+----
+
 http://expressjs.com/
+
 http://embeddedjs.com/
+
 http://linkedin.github.com/dustjs/
 
 
