@@ -5,7 +5,7 @@
 
 //change your template engine and hostname here ('ejs' or 'dust')
 var template_engine = 'dust'
-	, domain = 'spring';
+	, domain = 'localhost';
 
 var express = require('express')
 	, engine = require('ejs-locals')
