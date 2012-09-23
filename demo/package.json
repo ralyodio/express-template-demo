@@ -11,6 +11,7 @@
 		"dustjs-helpers": "*",
 		"consolidate": "*",
     "ejs": "*",
+    "ejs-locals": "*",
     "less-middleware": "*"
   }
 }

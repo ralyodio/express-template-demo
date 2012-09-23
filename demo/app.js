@@ -4,10 +4,11 @@
  */
 
 //change your template engine and hostname here ('ejs' or 'dust')
-var template_engine = 'dust'
+var template_engine = 'ejs'
 	, domain = 'spring';
 
 var express = require('express')
+	, engine = require('ejs-locals')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path');
@@ -19,8 +20,10 @@ if ( template_engine == 'dust' ) {
 	, cons = require('consolidate');
 
 	app.engine('dust', cons.dust);
-}
 
+} else if ( template_engine == 'ejs' ) {
+	app.engine('ejs', engine);
+}
 
 app.configure(function(){
   app.set('template_engine', template_engine);
