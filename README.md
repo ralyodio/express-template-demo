@@ -6,11 +6,11 @@ Demo of ejs and dustjs-linked in template views for Express 3.x.
 More info
 ----
 
-http://expressjs.com/
-
-http://embeddedjs.com/
-
-http://linkedin.github.com/dustjs/
+* http://embeddedjs.com/
+* http://linkedin.github.com/dustjs/
+* https://github.com/linkedin/dustjs/wiki/Dust-Tutorial
+* http://nodejs.org/
+* http://expressjs.com/
 
 
 Dependencies
