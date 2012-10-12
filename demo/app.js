@@ -4,7 +4,7 @@
  */
 
 //change your template engine and hostname here ('ejs' or 'dust')
-var template_engine = 'swig'
+var template_engine = 'dust'
 	, domain = 'localhost';
 
 var express = require('express')
@@ -36,7 +36,6 @@ app.configure(function(){
 
 	if ( template_engine == 'swig' ) {
 		app.set('view engine', 'swig');
-	 	app.set('views', __dirname +'/views');
 		app.set('view options', { layout: false });
 	}
 
