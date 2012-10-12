@@ -4,7 +4,7 @@
  */
 
 //change your template engine and hostname here ('ejs' or 'dust')
-var template_engine = 'dust'
+var template_engine = 'swig'
 	, domain = 'localhost';
 
 var express = require('express')
@@ -24,12 +24,25 @@ if ( template_engine == 'dust' ) {
 
 } else if ( template_engine == 'ejs' ) {
 	app.engine('ejs', engine);
+} else if ( template_engine == 'swig' ) {
+	var swig = require('swig')
+	, cons = require('consolidate');
+
+	app.engine('swig', cons.swig);
+	//app.set('view engine', 'html');
 }
 
 app.configure(function(){
+
+	if ( template_engine == 'swig' ) {
+		app.set('view engine', 'swig');
+	 	app.set('views', __dirname +'/views');
+		app.set('view options', { layout: false });
+	}
+
   app.set('template_engine', template_engine);
   app.set('domain', domain);
-  app.set('port', process.env.PORT || 3000);
+  app.set('port', process.env.PORT || 8080);
   app.set('views', __dirname + '/views');
   app.set('view engine', template_engine);
   app.use(express.favicon());
