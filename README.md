@@ -22,7 +22,7 @@ Installing app
 ----
 
 	git clone https://github.com/chovy/express-template-demo.git
-	cd express-template-demo 
+	cd express-template-demo/demo 
 	npm install
 	node app.js
 
