@@ -1,4 +1,4 @@
-{>"views/layout.dust"/}
+{>layout/}
 {<content}
 	This is loaded from a partial.
 {/content}

@@ -3,7 +3,6 @@ Express Template Demo
 
 A simple demo of using ejs and dustjs-linked template engines for your views in Express 3.x.
 
-
 More info
 ----
 
