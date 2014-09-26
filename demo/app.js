@@ -52,7 +52,7 @@ app.configure(function(){
 	app.use(express.session({ secret: 'whatever', store: store }));
   app.use(express.session());
   app.use(app.router);
-  app.use(require('less-middleware')({ src: __dirname + '/public' }));
+  app.use(require('less-middleware')(__dirname + '/public'));
   app.use(express.static(path.join(__dirname, 'public')));
 
 	//middleware
